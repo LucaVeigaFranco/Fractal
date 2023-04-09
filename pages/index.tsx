@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Link from "next/link"
 
 export default function Home() {
 
@@ -18,10 +19,12 @@ export default function Home() {
 
         <div className="text-5xl text-red-500 text-center">
         
-          Hello {name}
-     
-        
+          Hello {name}        
       </div>
+
+      <Link href={`/Hello/${name}`}>
+        Click here for your personal site
+      </Link>
 
     </main>
   )
